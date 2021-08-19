@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ 
+    <title>Marcenaria Móveis | Página oficial</title>
+</head>
+<body>
+    <div class="main" id="fundo">
+        <header>
+            <nav>
+                <a href="#"><img src="logo.png" class="logo"></a>
+                <div class="name-logo"><a href=""><h1>Marcenaria Móveis</h1></a></div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Furniture</a>
+                        <div class="sub-menu-1">
+                            <ul>
+                                <li><a href="#">Living room</a></li>
+                                <li><a href="#">Kitchen</a></li>
+                                <li><a href="#">Bedroom</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+            </nav>
+            <div class="lamp-conteiner">
+                
+                <Span> the object will be here</Span>
+            </div>
+            <div class="text-container">
+                <h1>A sua decoração <br> de luxo!</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, debitis maiores facere quae ex atque laudantium repudiandae sunt aperiam dolores quis cumque dolore. Ipsam incidunt amet non autem? Porro, dolores!</p>
+                <a href="#">Check All Collections</a>
+            </div>
+        </header>
+        <section>
+            <h2>Title1</h2>
+        </section>
+        <footer>
+            <div class="social-midia">
+                <span class="social"><a href="#" target="_blank"><i class="fab fa-whatsapp-square"></i></a></span>
+                <span class="social"><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></span></a></span>
+                <span class="social"><a href="#" target="_blank"><i class="fab fa-instagram-square"></i></span></a></span>
+                
+            </div>
+            <p>Copyright &copy; 2021 MARCENARIA MÓVEIS | Made by HELDER MACHAVA</p>
+        </footer>
+    </div>
+    
+    <script>
+        var btn = document.getElementById("btn")
+        var fundo = document.getElementById("fundo")
+
+
+        function toggleBtn(){
+           btn.classList.toggle("active")
+           fundo.classList.toggle("on")
+        }
+    </script>
+</body>
+</html>
