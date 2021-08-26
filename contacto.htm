@@ -13,9 +13,11 @@
     <meta name="theme-color" content="#6B4B36">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style-contato.css">    
 
-    <title>Marcenaria Móveis | Página oficial</title>
+    <title>Contato</title>
+    <style>
+    </style>
 </head>
 <body>
     <div class="main" id="fundo">
@@ -24,7 +26,7 @@
                 <a href="#"><img src="logo.png" class="logo"></a>
                 <div class="name-logo"><a href=""><h1>Marcenaria Móveis</h1></a></div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="#">MÓVEIS</a>
                         <div class="sub-menu-1">
                             <ul>
@@ -41,13 +43,24 @@
                 <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
             </nav>
             <div class="text-container">
-                <h1>A sua decoração <br> de luxo!</h1>
+                <h1>Face a sua cotação<br> connosco!</h1>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, debitis maiores facere quae ex atque laudantium repudiandae sunt aperiam dolores quis cumque dolore. Ipsam incidunt amet non autem? Porro, dolores!</p>
-                <a href="#">Check All Collections</a>
             </div>
         </header>
         <section>
-            <h2>Title1</h2>
+            <h2>Formulario de contacto</h2>
+            <div class="contato">
+                <form class="form" method="POST" action="enviar.php">
+                    <input class="field" name="nome"  placeholder="Nome*" required>
+                    <input class="field" name="telefone"  placeholder="Telefone">
+                    <input class="field" name="email" placeholder="E-mail*" required>
+                    <textarea class="field" name="mensagem"cols="30" rows="10" minlength="5" placeholder="Digite a sua mensagem..." required></textarea>
+                    <input class="btn-enviar" type="submit" value="Enviar">
+            
+                </form>
+            
+            </div> 
+            
         </section>
         <footer>
             <div class="social-midia">
@@ -59,7 +72,6 @@
             <p>Copyright &copy; 2021 MARCENARIA MÓVEIS | Made by HELDER MACHAVA</p>
         </footer>
     </div> 
-    
     <script>
         var btn = document.getElementById("btn")
         var fundo = document.getElementById("fundo")
@@ -70,5 +82,6 @@
            fundo.classList.toggle("on")
         }
     </script>
+
 </body>
 </html>

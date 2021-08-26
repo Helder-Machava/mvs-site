@@ -14,7 +14,7 @@
     position: relative;
 }
 header{
-    background-image: url(wood.jpg);
+    background-image: url(for-contacto.jpg);
     background-size: 120vh 1000px;
     background-size: cover;
     background-attachment: fixed;
@@ -30,6 +30,8 @@ nav{
 nav .name-logo a{
     text-decoration: none;
     color: white;
+    text-shadow: -5px 3px 15px black;
+
 }
 nav ul{
     flex: 1;
@@ -74,7 +76,8 @@ button span{
 .text-container{
     max-width: 600px;
     margin-top: 12%;
-    margin-left: 50%;
+    margin-left: 15%;
+    text-shadow: 5px 3px 15px black;
 }
 .text-container h1{
     font-size: 50px;
@@ -82,23 +85,9 @@ button span{
 }
 .text-container p{
     padding-top: 2px;
-}
-.text-container a{
-    text-decoration: none;
-    background: #00986f;
-    padding: 14px 40px;
-    display: inline-block;
-    color: white;
-    font-size: 18px;
-    margin-top: 30px;
-    border-radius: 30px;
-    margin-bottom: 50px;
-    transition: ease-in-out 0.2s;
-}
-.text-container a:hover{
-    background: #00503b;
+    padding-bottom: 60px;
 
-} 
+}
 .active{
    background: green;
 }
@@ -115,12 +104,32 @@ button span{
 }*/
 
 /********************************************/
+.content{display: flex; justify-content: center;}
+.contato{width: 100%; max-width: 500px;margin: auto;}
+.form{ display: flex; flex-direction: column;}
+.field{padding: 10px; margin-bottom: 15px;border: 1px solid rgb(175, 175, 175); border-radius: 5px; font-family: Arial, Helvetica, sans-serif; font-size: 10pt;}
+textarea{height: 150px;}
+.btn-enviar{
+    background: #00986f;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    outline: 0;
+    height: 50px;
+    transition: ease-in-out 0.2s;
+}
+.btn-enviar:hover{background: #00503b;}
 section{
     padding-top: 50px;
     height: 500px;
+    padding-bottom: 500px;
 }
 section h2{
     text-align: center;
+    padding-bottom: 50px;
 }
 footer{
     flex-shrink: 0;
